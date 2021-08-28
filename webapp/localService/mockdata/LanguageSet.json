@@ -1,0 +1,34 @@
+[{
+	"key": "01ece366-813e-4007-97ea-22ce3cb18494",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"langu": "English",
+	"writeScore": "4",
+	"speakScore": "4",
+	"__metadata": {
+		"uri": "LanguageSet(guid'01ece366-813e-4007-97ea-22ce3cb18494')",
+		"type": "ZPROFILE_SRV.Language"
+	}
+}, {
+	"key": "d4e4cacb-3987-4390-b201-596ffe722bf4",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"langu": "Malay",
+	"writeScore": "4",
+	"speakScore": "4",
+	"__metadata": {
+		"uri": "LanguageSet(guid'd4e4cacb-3987-4390-b201-596ffe722bf4')",
+		"type": "ZPROFILE_SRV.Language"
+	}
+}, {
+	"key": "1fbc21a8-a196-490d-8c44-49a1cd3217b7",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"langu": "Chinese",
+	"writeScore": "4.5",
+	"speakScore": "4.5",
+	"__metadata": {
+		"uri": "LanguageSet(guid'1fbc21a8-a196-490d-8c44-49a1cd3217b7')",
+		"type": "ZPROFILE_SRV.Language"
+	}
+}]

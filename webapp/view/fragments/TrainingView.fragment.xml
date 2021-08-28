@@ -1,0 +1,21 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<List id="idTrainingList" class="myProfile"
+		items="{ path: 'appModel>/profileData/TrainingSet/results', sorter: { path: 'courseDate', descending: 'true' }, templateShareable: 'true' }"
+		backgroundDesign="Translucent">
+		<CustomListItem id="idTrainingListItem" class="sapUiTinyMargin sapUiListBorderColor sapUiListBorderWidth">
+			<form:SimpleForm id="idFormTraining" title="{appModel>courseName}" editable="false" layout="ResponsiveGridLayout" labelSpanXL="2"
+				labelSpanL="2" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0"
+				columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<Label text="{i18n>xlbl.trainer}"/>
+				<Text text="{appModel>trainer}"/>
+				<Label text="{i18n>xlbl.courseDate}"/>
+				<Text text="{path: 'appModel>courseDate', formatter: '.formatter.defaultDateFormat' }"/>
+				<Label text="{i18n>xlbl.status}"/>
+				<Text text="{appModel>status}"/>
+				<Label text="{i18n>xlbl.certificate}" visible="{appModel>isCertify}"/>
+				<Link text="{ path: 'appModel>certificate', formatter: '.formatter.certificateLink' }" target="_blank" href="{appModel>certificate}"
+					visible="{appModel>isCertify}"/>
+			</form:SimpleForm>
+		</CustomListItem>
+	</List>
+</core:FragmentDefinition>

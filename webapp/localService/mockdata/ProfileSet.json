@@ -1,0 +1,42 @@
+[{
+	"key": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"firstName": "Nathan",
+	"lastName": "Khoo",
+	"nickName": "Nathan Khoo",
+	"title": "Mr.",
+	"email": "zc.khoo@yahoo.com",
+	"phone": "+60129727947",
+	"linkedIn": "www.linkedin.com/in/zckhoo",
+	"shortIntro": "Hi, I'm Nathan Khoo. Actively working on SAPUI5 customized development and passionate on what I'm doing.",
+	"aboutMe": "<p style=\"text-align: left\"><span lang=\"EN-GB\">I have total of 12 years of working experience in IT industry. I started to work in SAP field since year 2011. After joining NTT Data Business Solutions (NDBS), I focused on ABAP knowledge. Accumulated knowledge on SAP modules along the service in NDBS includes DBM, FI, SD, MM, HR and Warranty process workflow and IS-Retail. The knowledge accumulated on ABAP includes the BAdI class enhancement, UserExits, implicit enhancement, Module Pool programming, Screen enhancement, Email notification, usage of BAPI, interactive ALV reporting, Sapscripts, Smartforms and Adobe Form, IDOCs data extractions, POS Outbound integration and other reporting skills.</span>&nbsp;</p>\n<div>\n<p>&nbsp;</p>\n<p><span lang=\"EN-GB\">Currently focus on the SAP Fiori and S4HANA technologies. I have been actively focus on SAPUI5 customize Apps implementation for DBM solutions since 2015. Accumulated experience on SAPUI5 including front-end development, back-end Gateway Services development, Gateway configuration and SAPUI5 Apps deployment. S4HANA knowledge includes app enablement and fiori catalog/group customization.</span>&nbsp;</p>\n</div>",
+	"currentPosition": "SAPUI5 Developer",
+	"fioriExperience": "6",
+	"location": "PJ, Malaysia",
+	"TrainingSet": {
+		"__deferred": {
+			"uri": "ProfileSet(guid'00a4c48c-0dfc-4507-abc6-9b54a431b788')/TrainingSet"
+		}
+	},
+	"EducationSet": {
+		"__deferred": {
+			"uri": "ProfileSet(guid'00a4c48c-0dfc-4507-abc6-9b54a431b788')/EducationSet"
+		}
+	},
+	"EmploymentSet": {
+		"__deferred": {
+			"uri": "ProfileSet(guid'00a4c48c-0dfc-4507-abc6-9b54a431b788')/EmploymentSet"
+		}
+	},
+	"LanguageSet": {
+		"__deferred": {
+			"uri": "ProfileSet(guid'00a4c48c-0dfc-4507-abc6-9b54a431b788')/LanguageSet"
+		}
+	},
+	"SkillSet": {
+		"__deferred": {
+			"uri": "ProfileSet(guid'00a4c48c-0dfc-4507-abc6-9b54a431b788')/SkillSet"
+		}
+	}
+}]

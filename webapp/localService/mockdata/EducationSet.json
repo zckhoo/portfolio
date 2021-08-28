@@ -1,0 +1,46 @@
+[{
+	"key": "c2737175-ed8c-461b-9b19-54302f233189",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"level": "Bachelor’s Degree",
+	"grade": "",
+	"fieldOfStudy": "Computer Science",
+	"major": "Software Engineering",
+	"institution": "University Putra Malaysia (UPM)",
+	"location": "Malaysia",
+	"graduationDate": "/Date(1243699200000)/",
+	"__metadata": {
+		"uri": "EducationSet(guid'c2737175-ed8c-461b-9b19-54302f233189')",
+		"type": "ZPROFILE_SRV.Education"
+	}
+}, {
+	"key": "fc1b9fc5-5b70-4546-ab74-fab8cf3c2837",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"level": "STPM",
+	"grade": "",
+	"fieldOfStudy": "Science Stream",
+	"major": "Physics & Chemistry",
+	"institution": "Sekolah Menengah Kebangsaan (SMK) Gajah Berang",
+	"location": "Malacca",
+	"graduationDate": "/Date(1133280000000)/",
+	"__metadata": {
+		"uri": "EducationSet(guid'fc1b9fc5-5b70-4546-ab74-fab8cf3c2837')",
+		"type": "ZPROFILE_SRV.Education"
+	}
+}, {
+	"key": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"level": "SPM",
+	"grade": "",
+	"fieldOfStudy": "Science Stream",
+	"major": "",
+	"institution": "Sekolah Menengah Kebangsaan (SMK) Gajah Berang",
+	"location": "Malacca",
+	"graduationDate": "/Date(1070121600000)/",
+	"__metadata": {
+		"uri": "EducationSet(guid'a979dfb9-48fc-4b00-a23d-8389080eae16')",
+		"type": "ZPROFILE_SRV.Education"
+	}
+}]

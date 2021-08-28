@@ -1,0 +1,23 @@
+/* Enter your custom styles here */
+
+.myProfile>.sapMListItems>.sapMLIB {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.sapUxAPBlockContainer .myProfile .sapUiFormResGrid>.sapUiFormTitle {
+    padding-left: 12px;
+}
+
+.myProfile .sapUiVltCell>.sapMText {
+    line-height: 1.4rem
+}
+
+.myProfile .sapUiVltCell>.sapMObjStatus {
+    line-height: 1.4rem
+}
+
+.myProfile>.sapMPageHeader .sapMBarRight {
+    padding-right: 0rem;
+}

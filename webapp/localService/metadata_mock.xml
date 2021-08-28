@@ -1,0 +1,288 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:sap="http://www.sap.com/Protocols/SAPData" Namespace="ZPROFILE_SRV"
+			xml:lang="en" sap:schema-version="1">
+			<EntityType Name="Profile" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Key Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="Parent Key" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Key" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="firstName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="First Name" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="lastName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Last Name" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="nickName" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Nick Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="title" Type="Edm.String" MaxLength="15" sap:unicode="false" sap:label="Title" sap:creatable="false" sap:updatable="false"
+					sap:filterable="false"/>
+				<Property Name="nationality" Type="Edm.String" MaxLength="20" sap:unicode="false" sap:label="Nationality" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="email" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Email Address" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="phone" Type="Edm.String" MaxLength="15" sap:unicode="false" sap:label="Phone Number" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="linkedIn" Type="Edm.String" MaxLength="200" sap:unicode="false" sap:label="Linked In" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="shortIntro" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Short Introduction" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="aboutMe" Type="Edm.String" sap:unicode="false" sap:label="About Me" sap:creatable="false" sap:updatable="false"
+					sap:filterable="false"/>
+				<Property Name="currentPosition" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Current Position" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="location" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Location" sap:creatable="false"
+					sap:updatable="false" sap:filterable="false"/>
+				<Property Name="fioriExperience" Type="Edm.Byte" MaxLength="2" sap:unicode="false" sap:label="Fiori Experience" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<NavigationProperty Name="EmploymentSet" Relationship="ZPROFILE_SRV.ProfileToEmployment" FromRole="FromRole_ProfileToEmployment"
+					ToRole="ToRole_ProfileToEmployment"/>
+				<NavigationProperty Name="LanguageSet" Relationship="ZPROFILE_SRV.ProfileToLanguage" FromRole="FromRole_ProfileToLanguage"
+					ToRole="ToRole_ProfileToLanguage"/>
+				<NavigationProperty Name="SkillSet" Relationship="ZPROFILE_SRV.ProfileToSkill" FromRole="FromRole_ProfileToSkill"
+					ToRole="ToRole_ProfileToSkill"/>
+				<NavigationProperty Name="EducationSet" Relationship="ZPROFILE_SRV.ProfileToEducation" FromRole="FromRole_ProfileToEducation"
+					ToRole="ToRole_ProfileToEducation"/>
+				<NavigationProperty Name="TrainingSet" Relationship="ZPROFILE_SRV.ProfileToTraining" FromRole="FromRole_ProfileToTraining"
+					ToRole="ToRole_ProfileToTraining"/>
+			</EntityType>
+			<EntityType Name="Education" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Key" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="level" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Level" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="grade" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Grade" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="fieldOfStudy" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Field of Study" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="major" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Major" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="institution" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Institution" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="location" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Location" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="graduationDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Graduation Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="true" sap:filterable="false"/>
+				<NavigationProperty Name="EducationResultSet" Relationship="ZPROFILE_SRV.EducationToResult" FromRole="FromRole_EducationToResult"
+					ToRole="ToRole_EducationToResult"/>
+			</EntityType>
+			<EntityType Name="EducationResult" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Key" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="subject" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Subject" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="score" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:label="Score" sap:creatable="false" sap:updatable="false"/>
+			</EntityType>
+			<EntityType Name="Employment" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Key" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false"/>
+				<Property Name="companyName" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Company" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="industry" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Industry" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="position" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Position" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="jobSpecification" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Job Specification" sap:creatable="false"
+					sap:updatable="false"/>
+				<Property Name="joinDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Joined Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="true" sap:filterable="false"/>
+				<Property Name="leftDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Left Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="true" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="Language" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Key Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="Parent Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="langu" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Language" sap:creatable="false" sap:updatable="false"
+					sap:sortable="true" sap:filterable="false"/>
+				<Property Name="writeScore" Type="Edm.Byte" MaxLength="2" sap:unicode="false" sap:label="Write Skill" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="speakScore" Type="Edm.Byte" MaxLength="2" sap:unicode="false" sap:label="Speak Skill" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="Skill" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Key Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="Parent Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="skillName" Type="Edm.String" MaxLength="70" sap:unicode="false" sap:label="Skill Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="true" sap:filterable="false"/>
+				<Property Name="yearStart" Type="Edm.Byte" MaxLength="4" sap:unicode="false" sap:label="Year Start" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="yearEnd" Type="Edm.Byte" MaxLength="4" sap:unicode="false" sap:label="Year End" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="proficiency" Type="Edm.Byte" MaxLength="2" sap:unicode="false" sap:label="Proficiency Score" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<EntityType Name="Training" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="key"/>
+				</Key>
+				<Property Name="key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Key Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="parentKey" Type="Edm.Guid" sap:unicode="false" sap:label="Parent Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="rootKey" Type="Edm.Guid" sap:unicode="false" sap:label="Root Node" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="courseName" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Course Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="courseDate" Type="Edm.DateTime" Precision="0" sap:unicode="false" sap:label="Course Date" sap:creatable="false"
+					sap:updatable="false" sap:sortable="true" sap:filterable="false"/>
+				<Property Name="trainer" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Trainer" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="status" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="certificate" Type="Edm.String" sap:unicode="false" sap:label="Certificate URL" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="isCertify" Type="Edm.Boolean" sap:unicode="false" sap:label="Is Certificate Available" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
+			<Association Name="ProfileToLanguage" sap:content-version="1">
+				<End Type="ZPROFILE_SRV.Profile" Multiplicity="1" Role="FromRole_ProfileToLanguage"/>
+				<End Type="ZPROFILE_SRV.Language" Multiplicity="*" Role="ToRole_ProfileToLanguage"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ProfileToLanguage">
+						<PropertyRef Name="key"/>
+					</Principal>
+					<Dependent Role="ToRole_ProfileToLanguage">
+						<PropertyRef Name="parentKey"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ProfileToSkill" sap:content-version="1">
+				<End Type="ZPROFILE_SRV.Profile" Multiplicity="1" Role="FromRole_ProfileToSkill"/>
+				<End Type="ZPROFILE_SRV.Skill" Multiplicity="*" Role="ToRole_ProfileToSkill"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ProfileToSkill">
+						<PropertyRef Name="key"/>
+					</Principal>
+					<Dependent Role="ToRole_ProfileToSkill">
+						<PropertyRef Name="parentKey"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ProfileToTraining" sap:content-version="1">
+				<End Type="ZPROFILE_SRV.Profile" Multiplicity="1" Role="FromRole_ProfileToTraining"/>
+				<End Type="ZPROFILE_SRV.Training" Multiplicity="*" Role="ToRole_ProfileToTraining"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ProfileToTraining">
+						<PropertyRef Name="key"/>
+					</Principal>
+					<Dependent Role="ToRole_ProfileToTraining">
+						<PropertyRef Name="parentKey"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ProfileToEducation" sap:content-version="1">
+				<End Type="ZPROFILE_SRV.Profile" Multiplicity="*" Role="FromRole_ProfileToEducation"/>
+				<End Type="ZPROFILE_SRV.Education" Multiplicity="*" Role="ToRole_ProfileToEducation"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ProfileToEducation">
+						<PropertyRef Name="key"/>
+					</Principal>
+					<Dependent Role="ToRole_ProfileToEducation">
+						<PropertyRef Name="parentKey"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="EducationToResult" sap:content-version="1">
+				<End Type="ZPROFILE_SRV.Education" Multiplicity="1" Role="FromRole_EducationToResult"/>
+				<End Type="ZPROFILE_SRV.EducationResult" Multiplicity="*" Role="ToRole_EducationToResult"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_EducationToResult">
+						<PropertyRef Name="key"/>
+					</Principal>
+					<Dependent Role="ToRole_EducationToResult">
+						<PropertyRef Name="parentKey"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ProfileToEmployment" sap:content-version="1">
+				<End Type="ZPROFILE_SRV.Profile" Multiplicity="*" Role="FromRole_ProfileToEmployment"/>
+				<End Type="ZPROFILE_SRV.Employment" Multiplicity="*" Role="ToRole_ProfileToEmployment"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ProfileToEmployment">
+						<PropertyRef Name="key"/>
+					</Principal>
+					<Dependent Role="ToRole_ProfileToEmployment">
+						<PropertyRef Name="parentKey"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="ZPROFILE_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+				<EntitySet Name="ProfileSet" EntityType="ZPROFILE_SRV.Profile" sap:creatable="false" sap:deletable="false" sap:pageable="false"
+					sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="EducationSet" EntityType="ZPROFILE_SRV.Education" sap:creatable="false" sap:deletable="false" sap:pageable="false"
+					sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="EducationResultSet" EntityType="ZPROFILE_SRV.EducationResult" sap:creatable="false" sap:deletable="false"
+					sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="EmploymentSet" EntityType="ZPROFILE_SRV.Employment" sap:creatable="false" sap:deletable="false" sap:pageable="false"
+					sap:addressable="false" sap:content-version="1"/>
+				<EntitySet Name="LanguageSet" EntityType="ZPROFILE_SRV.Language" sap:creatable="false" sap:deletable="false" sap:pageable="false"
+					sap:content-version="1"/>
+				<EntitySet Name="TrainingSet" EntityType="ZPROFILE_SRV.Training" sap:creatable="false" sap:deletable="false" sap:pageable="false"
+					sap:content-version="1"/>
+				<EntitySet Name="SkillSet" EntityType="ZPROFILE_SRV.Skill" sap:creatable="false" sap:deletable="false" sap:pageable="false"
+					sap:content-version="1"/>
+				<AssociationSet Name="ProfileToEducationSet" Association="ZPROFILE_SRV.ProfileToEducation" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="ProfileSet" Role="FromRole_ProfileToEducation"/>
+					<End EntitySet="EducationSet" Role="ToRole_ProfileToEducation"/>
+				</AssociationSet>
+				<AssociationSet Name="EducationToResultSet" Association="ZPROFILE_SRV.EducationToResult" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="EducationSet" Role="FromRole_EducationToResult"/>
+					<End EntitySet="EducationResultSet" Role="ToRole_EducationToResult"/>
+				</AssociationSet>
+				<AssociationSet Name="ProfileToEmploymentSet" Association="ZPROFILE_SRV.ProfileToEmployment" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="ProfileSet" Role="FromRole_ProfileToEmployment"/>
+					<End EntitySet="EmploymentSet" Role="ToRole_ProfileToEmployment"/>
+				</AssociationSet>
+				<AssociationSet Name="ProfileToLanguageSet" Association="ZPROFILE_SRV.ProfileToLanguage" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="ProfileSet" Role="FromRole_ProfileToLanguage"/>
+					<End EntitySet="LanguageSet" Role="ToRole_ProfileToLanguage"/>
+				</AssociationSet>
+				<AssociationSet Name="ProfileToSkillSet" Association="ZPROFILE_SRV.ProfileToSkill" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="ProfileSet" Role="FromRole_ProfileToSkill"/>
+					<End EntitySet="SkillSet" Role="ToRole_ProfileToSkill"/>
+				</AssociationSet>
+				<AssociationSet Name="ProfileToTrainingSet" Association="ZPROFILE_SRV.ProfileToTraining" sap:creatable="false" sap:updatable="false"
+					sap:deletable="false" sap:content-version="1">
+					<End EntitySet="ProfileSet" Role="FromRole_ProfileToTraining"/>
+					<End EntitySet="TrainingSet" Role="ToRole_ProfileToTraining"/>
+				</AssociationSet>
+			</EntityContainer>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZPROFILE_SRV/$metadata"/>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZPROFILE_SRV/$metadata"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

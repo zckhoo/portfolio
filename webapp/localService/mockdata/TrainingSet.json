@@ -1,0 +1,93 @@
+[{
+	"key": "cf267f67-90de-46d5-9021-d01b42bb48ce",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "Microsoft Visual Studio Undergraduate Program",
+	"courseDate": "/Date(1238169600000)/",
+	"trainer": "MDEC",
+	"status": "Participation",
+	"__metadata": {
+		"uri": "TrainingSet(guid'cf267f67-90de-46d5-9021-d01b42bb48ce')",
+		"type": "ZPROFILE_SRV.Training"
+	}
+}, {
+	"key": "0308748c-9efe-4160-9f1c-c3f66e8a7a0d",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "SEA Mobility Boot Camp (Knowledge Sharing for SAP Partner) – Bangkok",
+	"courseDate": "/Date(1343404800000)/",
+	"trainer": "APJ Solution Centre",
+	"status": "Participation",
+	"__metadata": {
+		"uri": "TrainingSet(guid'0308748c-9efe-4160-9f1c-c3f66e8a7a0d')",
+		"type": "ZPROFILE_SRV.Training"
+	}
+}, {
+	"key": "2eec88b4-5712-48c8-a76e-85049f1e7dea",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "Introduction to Software Development on SAP HANA",
+	"courseDate": "/Date(1373817600000)/",
+	"trainer": "openSAP",
+	"status": "Pass",
+	"__metadata": {
+		"uri": "TrainingSet(guid'2eec88b4-5712-48c8-a76e-85049f1e7dea')",
+		"type": "ZPROFILE_SRV.Training"
+	},
+	"certificate": "https://open.sap.com/verify/xuram-kyhev-soteg-cipud-bebyk",
+	"isCertify": true
+}, {
+	"key": "1e26d0f6-26e5-4ef4-bd8c-aab2d7bebd6c",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "SAP HANA - Certified Application Associate",
+	"courseDate": "/Date(1514563200000)/",
+	"trainer": "K-Pintar (HRDF)",
+	"status": "Attendance Certificate",
+	"__metadata": {
+		"uri": "TrainingSet(guid'1e26d0f6-26e5-4ef4-bd8c-aab2d7bebd6c')",
+		"type": "ZPROFILE_SRV.Training"
+	}
+}, {
+	"key": "cf267f67-90de-46d5-9021-d01b42bb48ce",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "Introduction to SAP Fiori UX",
+	"courseDate": "/Date(1414080000000)/",
+	"trainer": "openSAP",
+	"status": "Pass",
+	"__metadata": {
+		"uri": "TrainingSet(guid'cf267f67-90de-46d5-9021-d01b42bb48ce')",
+		"type": "ZPROFILE_SRV.Training"
+	},
+	"certificate": "https://open.sap.com/verify/xuvih-motuv-goviv-batuf-tyrem",
+	"isCertify": true
+}, {
+	"key": "085930f0-d57e-456f-9c03-7ab5221dab57",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "SAP Leonardo - Enabling the Intelligent Enterprise",
+	"courseDate": "/Date(1533571200000)/",
+	"trainer": "openSAP",
+	"status": "Pass",
+	"certificate": "https://open.sap.com/verify/xemer-bycyf-gakup-gykid-cycup",
+	"__metadata": {
+		"uri": "TrainingSet(guid'085930f0-d57e-456f-9c03-7ab5221dab57')",
+		"type": "ZPROFILE_SRV.Training"
+	},
+	"isCertify": true
+}, {
+	"key": "03b59e13-e0a0-4a30-90f1-f512070ff7f8",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "Developing Mobile Apps with SAP HANA Cloud Platform",
+	"courseDate": "/Date(1450195200000)/",
+	"trainer": "openSAP",
+	"status": "Pass",
+	"certificate": "https://open.sap.com/verify/xokiv-kymid-pohyd-ludyf-dases",
+	"__metadata": {
+		"uri": "TrainingSet(guid'03b59e13-e0a0-4a30-90f1-f512070ff7f8')",
+		"type": "ZPROFILE_SRV.Training"
+	},
+	"isCertify": true
+}]

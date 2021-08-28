@@ -1,0 +1,43 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<List id="idEmploymentList" class="myProfile"
+		items="{ path: 'appModel>/profileData/EmploymentSet/results', sorter: { path: 'joinDate', descending: 'true' } }"
+		backgroundDesign="Translucent">
+		<CustomListItem id="idEmploymentListItem" class="sapUiTinyMargin sapUiListBorderColor sapUiListBorderWidth">
+			<form:SimpleForm id="idFormEmployment" title="{appModel>companyName}" editable="false" layout="ResponsiveGridLayout" labelSpanXL="2"
+				labelSpanL="2" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0"
+				columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<Label text="{i18n>xlbl.industry}"/>
+				<Text text="{appModel>industry}"/>
+				<Label text="{i18n>xlbl.position}"/>
+				<Text text="{appModel>position}"/>
+				<Label text="{i18n>xlbl.jobSpecification}"/>
+				<Text text="{appModel>jobSpecification}"/>
+				<Label text="{i18n>xlbl.joinDate}"/>
+				<Text text="{path: 'appModel>joinDate', formatter: '.formatter.defaultMonthYearFormat' }"/>
+				<Label text="{i18n>xlbl.leftDate}" visible="{= ${appModel>leftDate} !== null}"/>
+				<Text text="{path: 'appModel>leftDate', formatter: '.formatter.defaultMonthYearFormat' }" visible="{= ${appModel>leftDate} !== null}"/>
+				<!--<Label text="{i18n>xlbl.educationResult}" visible="{= ${appModel>EducationResultSet/results}.length > 0 }"/>-->
+				<!--<Table id="idEducationResultTable" growing="true" growingThreshold="15" mode="None" sticky="HeaderToolbar,InfoToolbar,ColumnHeaders"-->
+				<!--	items="{ path: 'appModel>EducationResultSet/results', sorter: { path: 'subject', descending: 'false' } }"-->
+				<!--	visible="{= ${appModel>EducationResultSet/results}.length > 0 }" width="350px">-->
+				<!--	<columns>-->
+				<!--		<Column hAlign="Begin">-->
+				<!--			<Text text="{i18n>xlbl.subject}"/>-->
+				<!--		</Column>-->
+				<!--		<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">-->
+				<!--			<Text text="{i18n>xlbl.score}"/>-->
+				<!--		</Column>-->
+				<!--	</columns>-->
+				<!--	<items>-->
+				<!--		<ColumnListItem id="idEducationResultListItem" type="Inactive">-->
+				<!--			<cells>-->
+				<!--				<Text text="{appModel>subject}"/>-->
+				<!--				<Text text="{appModel>score}"/>-->
+				<!--			</cells>-->
+				<!--		</ColumnListItem>-->
+				<!--	</items>-->
+				<!--</Table>-->
+			</form:SimpleForm>
+		</CustomListItem>
+	</List>
+</core:FragmentDefinition>

@@ -1,0 +1,134 @@
+<mvc:View controllerName="my.zckhoo.portfolio.controller.Page" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:uxap="sap.uxap"
+	xmlns="sap.m" xmlns:f="sap.f" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<App id="app">
+		<pages>
+			<Page class="myProfile" backgroundDesign="Transparent">
+				<headerContent width="100%">
+					<tnt:ToolHeader width="100%">
+						<Image width="2rem" src="./webapp/localService/photo/logo.png"/>
+						<Text text="{appModel>/profileData/nickName}" wrapping="false"/>
+						<ToolbarSpacer/>
+						<Title text="{i18n>xtit.resume}"/>
+						<ToolbarSpacer/>
+						<SegmentedButton id="idThemeSegment" selectedKey="Light" selectionChange="onSelectionChangeTheme">
+							<items>
+								<SegmentedButtonItem key="Light" text="Light"/>
+								<SegmentedButtonItem key="Dark" text="Dark"/>
+								<!--<SegmentedButtonItem key="Auto" text="Auto"/>-->
+							</items>
+						</SegmentedButton>
+						<Avatar src="./webapp/localService/photo/profile.jpg" displaySize="XS" press=".onAvatarPressed"/>
+					</tnt:ToolHeader>
+				</headerContent>
+				<content>
+					<uxap:ObjectPageLayout id="page" showTitleInHeaderContent="true" alwaysShowContentHeader="false" preserveHeaderStateOnScroll="false"
+						headerContentPinnable="true" isChildPage="true" enableLazyLoading="false" upperCaseAnchorBar="false">
+						<uxap:headerTitle>
+							<uxap:ObjectPageDynamicHeaderTitle>
+								<uxap:expandedHeading>
+									<FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+										<Title text="{appModel>/profileData/nickName}" wrapping="true" class="sapUiTinyMarginEnd sapUiTinyMarginTop"/>
+										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+											<ObjectMarker type="Favorite" class="sapUiTinyMarginEnd"/>
+										</FlexBox>
+									</FlexBox>
+								</uxap:expandedHeading>
+								<uxap:snappedHeading>
+									<FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+											<f:Avatar src="./webapp/localService/photo/profile.jpg" displaySize="S" class="sapUiTinyMarginEnd"/>
+											<Title text="{appModel>/profileData/nickName}" wrapping="true" class="sapUiTinyMarginEnd"/>
+										</FlexBox>
+										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+											<ObjectMarker type="Favorite" class="sapUiTinyMarginEnd"/>
+										</FlexBox>
+									</FlexBox>
+								</uxap:snappedHeading>
+								<uxap:expandedContent>
+									<Text text="{appModel>/profileData/currentPosition}"/>
+								</uxap:expandedContent>
+								<uxap:snappedContent>
+									<Text text="{appModel>/profileData/currentPosition}"/>
+								</uxap:snappedContent>
+								<uxap:navigationActions>
+									<OverflowToolbarButton type="Transparent" icon="sap-icon://outgoing-call" tooltip="{i18n>xtip.callMe}" press="onPressPhone"/>
+									<OverflowToolbarButton type="Transparent" icon="sap-icon://email" tooltip="{i18n>xtip.emailMe}" press="onPressEmail"/>
+								</uxap:navigationActions>
+							</uxap:ObjectPageDynamicHeaderTitle>
+						</uxap:headerTitle>
+						<uxap:headerContent >
+							<FlexBox class="myProfile" wrap="Wrap" fitContainer="true" alignItems="Stretch">
+								<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="./webapp/localService/photo/profile.jpg" displaySize="L"></f:Avatar>
+								<l:VerticalLayout class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop">
+									<ObjectStatus title="{i18n>xlbl.name}" text="{appModel>/profileData/nickName}"/>
+									<ObjectStatus title="{i18n>xlbl.currentLocation}" text="{appModel>/profileData/location}"/>
+									<ObjectStatus title="{i18n>xlbl.email}" text="{appModel>/profileData/email}"/>
+									<ObjectStatus title="{i18n>xlbl.phone}" text="{appModel>/profileData/phone}"/>
+								</l:VerticalLayout>
+								<l:VerticalLayout class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop">
+									<Text width="230px" text="{appModel>/profileData/shortIntro}"/>
+								</l:VerticalLayout>
+							</FlexBox>
+						</uxap:headerContent>
+						<uxap:sections>
+							<uxap:ObjectPageSection id="contactSection" title="{i18n>xtit.contact}" titleUppercase="false">
+								<uxap:subSections >
+									<uxap:ObjectPageSubSection id="contactSectionSS1" title=" ">
+										<uxap:blocks>
+											<core:Fragment fragmentName="my.zckhoo.portfolio.view.fragments.ContactView" type="XML"/>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+							<uxap:ObjectPageSection id="educationSection" title="{i18n>xtit.education}" titleUppercase="false">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection id="educationSectionSS1" title=" ">
+										<uxap:blocks>
+											<core:Fragment fragmentName="my.zckhoo.portfolio.view.fragments.EducationView" type="XML"/>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+							<uxap:ObjectPageSection id="employmentSection" title="{i18n>xtit.employment}" titleUppercase="false">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection id="employmentSectionSS1" title=" ">
+										<uxap:blocks>
+											<core:Fragment fragmentName="my.zckhoo.portfolio.view.fragments.EmploymentView" type="XML"/>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+							<uxap:ObjectPageSection id="languageSection" title="{i18n>xtit.language}" titleUppercase="false">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection id="languageSectionSS1" title=" ">
+										<uxap:blocks>
+											<core:Fragment fragmentName="my.zckhoo.portfolio.view.fragments.LanguageView" type="XML"/>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+							<uxap:ObjectPageSection id="skillSection" title="{i18n>xtit.skill}" titleUppercase="false">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection id="skillSectionSS1" title=" ">
+										<uxap:blocks>
+											<core:Fragment fragmentName="my.zckhoo.portfolio.view.fragments.SkillView" type="XML"/>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+							<uxap:ObjectPageSection id="trainingSection" title="{i18n>xtit.training}" titleUppercase="false">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection id="trainingSectionSS1" title=" ">
+										<uxap:blocks>
+											<core:Fragment fragmentName="my.zckhoo.portfolio.view.fragments.TrainingView" type="XML"/>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+						</uxap:sections>
+					</uxap:ObjectPageLayout>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

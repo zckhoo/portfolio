@@ -1,0 +1,23 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<form:SimpleForm id="idFormContact" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="2" labelSpanM="2"
+		labelSpanS="12" adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+		singleContainerFullSize="false">
+		<Label text="{i18n>xlbl.email}"/>
+		<Link text="{appModel>/profileData/email}" press="onPressEmail"/>
+		<Label text="{i18n>xlbl.phone}"/>
+		<l:VerticalLayout>
+			<Button width="10rem" icon="sap-icon://call" text="{appModel>/profileData/phone}" press="onPressPhone"/>
+			<Avatar src="./webapp/localService/photo/contactQR.png" displaySize="Custom" customDisplaySize="10rem" backgroundColor="Placeholder"
+				displayShape="Square">
+				<detailBox>
+					<LightBox>
+						<LightBoxItem imageSrc="./webapp/localService/photo/contactQR.png" alt="{i18n>xlbl.phonebook}" title="{i18n>xlbl.phonebook}"
+							subtitle="{i18n>xtit.scanQRcode}"/>
+					</LightBox>
+				</detailBox>
+			</Avatar>
+		</l:VerticalLayout>
+		<Label text="{i18n>xlbl.whatsapp}"/>
+		<Button width="10rem" icon="./webapp/localService/photo/whatsapp.png" text="{appModel>/profileData/phone}" press="onPressWhatsApp"/>
+	</form:SimpleForm>
+</core:FragmentDefinition>

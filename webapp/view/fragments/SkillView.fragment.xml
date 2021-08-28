@@ -1,0 +1,25 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<Table id="idSkillList" growing="true" growingThreshold="15" mode="None" sticky="HeaderToolbar,InfoToolbar,ColumnHeaders"
+		items="{ path: 'appModel>/profileData/SkillSet/results', sorter: { path: 'yearEnd', descending: 'false' }, templateShareable: 'true' }">
+		<columns>
+			<Column hAlign="Begin">
+				<Text text="{i18n>xlbl.skill}"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="{i18n>xlbl.yearsOfExperience}"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="{i18n>xlbl.expertiesLevel}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="idSkillListItem" type="Inactive">
+				<cells>
+					<Text text="{appModel>skillName}"/>
+					<Text text="{ parts: [{ path: 'appModel>yearStart'},{ path: 'appModel>yearEnd'}], formatter: '.formatter.calculateYear' }"/>
+					<RatingIndicator maxValue="5" class="sapUiTinyMarginBottom" iconSize="22px" value="{appModel>proficiency}" editable="false"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

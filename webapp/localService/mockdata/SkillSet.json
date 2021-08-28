@@ -1,0 +1,114 @@
+[{
+	"key": "085930f0-d57e-456f-9c03-7ab5221dab57",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "SAP ABAP",
+	"proficiency": "5",
+	"__metadata": {
+		"uri": "SkillSet(guid'085930f0-d57e-456f-9c03-7ab5221dab57')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2011"
+}, {
+	"key": "03b59e13-e0a0-4a30-90f1-f512070ff7f8",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "SAPUI5",
+	"proficiency": "5",
+	"__metadata": {
+		"uri": "SkillSet(guid'03b59e13-e0a0-4a30-90f1-f512070ff7f8')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2014"
+}, {
+	"key": "e6eed7f6-1b6f-403b-a912-6b2602fd8d9d",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "XML",
+	"proficiency": "4",
+	"__metadata": {
+		"uri": "SkillSet(guid'e6eed7f6-1b6f-403b-a912-6b2602fd8d9d')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2014"
+}, {
+	"key": "66f61e3c-bb47-4ff5-adf0-8e3e8e6b353f",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "HTML5",
+	"proficiency": "4",
+	"__metadata": {
+		"uri": "SkillSet(guid'66f61e3c-bb47-4ff5-adf0-8e3e8e6b353f')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2014"
+}, {
+	"key": "eec740f1-f1ed-4259-8fcb-c3e08f85a6ac",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "SAP BOPF",
+	"yearStart": "2017",
+	"proficiency": "3.5",
+	"__metadata": {
+		"uri": "SkillSet(guid'eec740f1-f1ed-4259-8fcb-c3e08f85a6ac')",
+		"type": "ZPROFILE_SRV.Skill"
+	}
+}, {
+	"key": "44e2c61c-516c-4a33-a912-76d7456916a3",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "SAP Gateway",
+	"yearStart": "2014",
+	"proficiency": "5",
+	"__metadata": {
+		"uri": "SkillSet(guid'44e2c61c-516c-4a33-a912-76d7456916a3')",
+		"type": "ZPROFILE_SRV.Skill"
+	}
+}, {
+	"key": "72718ee2-75fb-4f20-8979-f717c6bfa118",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "Github",
+	"yearStart": "2014",
+	"proficiency": "4",
+	"__metadata": {
+		"uri": "SkillSet(guid'72718ee2-75fb-4f20-8979-f717c6bfa118')",
+		"type": "ZPROFILE_SRV.Skill"
+	}
+}, {
+	"key": "681469b5-0eb4-4050-b5df-c051dbfac091",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "SAP Adobe Form",
+	"proficiency": "2",
+	"__metadata": {
+		"uri": "SkillSet(guid'681469b5-0eb4-4050-b5df-c051dbfac091')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2016",
+	"yearEnd": "2018"
+}, {
+	"key": "4cb57719-857d-4fed-a5c0-9931ccbbd9b6",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "Sybase Unwired Platform",
+	"proficiency": "2",
+	"__metadata": {
+		"uri": "SkillSet(guid'4cb57719-857d-4fed-a5c0-9931ccbbd9b6')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2013",
+	"yearEnd": "2014"
+}, {
+	"key": "40401dbf-9c45-4c8c-8525-6b58a81e394d",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"skillName": "JAVA Programming",
+	"proficiency": "2",
+	"__metadata": {
+		"uri": "SkillSet(guid'40401dbf-9c45-4c8c-8525-6b58a81e394d')",
+		"type": "ZPROFILE_SRV.Skill"
+	},
+	"yearStart": "2008",
+	"yearEnd": "2009"
+}]

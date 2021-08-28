@@ -1,0 +1,81 @@
+[{
+	"key": "3066e7fb-faa3-45ce-a12a-0a94a736ebb4",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Bahasa Melayu",
+	"score": "2A",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'3066e7fb-faa3-45ce-a12a-0a94a736ebb4')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "66675862-5168-432a-8e81-0a52b35086ea",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "English",
+	"score": "1A",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'66675862-5168-432a-8e81-0a52b35086ea')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "2f6c6285-2bd1-4ce3-a12e-dc4dfaa2896b",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Chinese",
+	"score": "2A",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'2f6c6285-2bd1-4ce3-a12e-dc4dfaa2896b')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "e9673ad8-c496-4bcb-8628-9f1988bcf6c8",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Mathematics",
+	"score": "1A",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'e9673ad8-c496-4bcb-8628-9f1988bcf6c8')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "7c593370-26d0-4f4b-81ec-3a45cdfa2b0d",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Additional Maths",
+	"score": "1A",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'7c593370-26d0-4f4b-81ec-3a45cdfa2b0d')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "46e09ff3-58b5-4a04-9427-52fc7726dd07",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Principle of Account",
+	"score": "1A",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'46e09ff3-58b5-4a04-9427-52fc7726dd07')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "95bf0d34-528c-4069-a1a2-0c6fc0e8e4e3",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Physics",
+	"score": "3B",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'95bf0d34-528c-4069-a1a2-0c6fc0e8e4e3')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}, {
+	"key": "638fd089-dcb2-4a07-b10f-9cedab591abc",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"parentKey": "a979dfb9-48fc-4b00-a23d-8389080eae16",
+	"subject": "Chemistry",
+	"score": "3B",
+	"__metadata": {
+		"uri": "EducationResultSet(guid'638fd089-dcb2-4a07-b10f-9cedab591abc')",
+		"type": "ZPROFILE_SRV.EducationResult"
+	}
+}]

@@ -1,0 +1,45 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<List id="idEducationList" class="myProfile"
+		items="{ path: 'appModel>/profileData/EducationSet/results', sorter: { path: 'graduationDate', descending: 'true' }, templateShareable: 'true' }"
+		backgroundDesign="Translucent">
+		<CustomListItem id="idEducationListItem" class="sapUiTinyMargin sapUiListBorderColor sapUiListBorderWidth">
+			<form:SimpleForm id="idFormEducation" title="{appModel>level}" editable="false" layout="ResponsiveGridLayout" labelSpanXL="2" labelSpanL="2"
+				labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0" columnsXL="1"
+				columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<Label text="{i18n>xlbl.institution}"/>
+				<Text text="{appModel>institution}"/>
+				<Label text="{i18n>xlbl.location}"/>
+				<Text text="{appModel>location}"/>
+				<Label text="{i18n>xlbl.fieldOfStudy}"/>
+				<Text text="{appModel>fieldOfStudy}"/>
+				<Label text="{i18n>xlbl.major}" visible="{= ${appModel>major}.length > 0 }"/>
+				<Text text="{appModel>major}" visible="{= ${appModel>major}.length > 0 }"/>
+				<Label text="{i18n>xlbl.graduation}"/>
+				<Text text="{path: 'appModel>graduationDate', formatter: '.formatter.defaultMonthYearFormat' }"/>
+				<Label text="{i18n>xlbl.grade}" visible="{= ${appModel>grade}.length > 0 }"/>
+				<Text text="{appModel>grade}" visible="{= ${appModel>grade}.length > 0 }"/>
+				<!--<Label text="{i18n>xlbl.educationResult}" visible="{= ${appModel>EducationResultSet/results}.length > 0 }"/>-->
+				<!--<Table id="idEducationResultTable" growing="true" growingThreshold="15" mode="None" sticky="HeaderToolbar,InfoToolbar,ColumnHeaders"-->
+				<!--	items="{ path: 'appModel>EducationResultSet/results', sorter: { path: 'subject', descending: 'true' }, templateShareable: 'true' }"-->
+				<!--	visible="{= ${appModel>EducationResultSet/results}.length > 0 }" width="350px">-->
+				<!--	<columns>-->
+				<!--		<Column hAlign="Begin">-->
+				<!--			<Text text="{i18n>xlbl.subject}"/>-->
+				<!--		</Column>-->
+				<!--		<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">-->
+				<!--			<Text text="{i18n>xlbl.score}"/>-->
+				<!--		</Column>-->
+				<!--	</columns>-->
+				<!--	<items>-->
+				<!--		<ColumnListItem id="idEducationResultListItem" type="Inactive">-->
+				<!--			<cells>-->
+				<!--				<Text text="{appModel>subject}"/>-->
+				<!--				<Text text="{appModel>score}"/>-->
+				<!--			</cells>-->
+				<!--		</ColumnListItem>-->
+				<!--	</items>-->
+				<!--</Table>-->
+			</form:SimpleForm>
+		</CustomListItem>
+	</List>
+</core:FragmentDefinition>
