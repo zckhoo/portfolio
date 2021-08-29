@@ -27,16 +27,11 @@ sap.ui.define([
 			this._oErrorHandler = new ErrorHandler(this);
 
 			// set AppModel control share object properties
-			var oModel = new JSONModel({
-				dialogTitle: null,
-				dialogMode: null
-			});
+			var oModel = new JSONModel();
 			this.setModel(oModel, "appModel");
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
-			// set the FLP model
-			this.setModel(models.createFLPModel(), "FLP");
 
 			this.getModel().metadataLoaded().then(function () {
 				// Get Idea for Filter Creation

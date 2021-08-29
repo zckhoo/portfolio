@@ -12,7 +12,7 @@ sap.ui.define([
 
 		onInit: function () {
 			this.byId("idThemeSegment").setSelectedKey("Light");
-			if (new Date().getHours() > 19) {
+			if (new Date().getHours() > 18) {
 				this.byId("idThemeSegment").setSelectedKey("Dark");
 				sap.ui.getCore().applyTheme("sap_fiori_3_dark");
 			} else if (new Date().getHours() > 6) {
