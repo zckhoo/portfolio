@@ -14,7 +14,6 @@
 							<items>
 								<SegmentedButtonItem key="Light" text="Light"/>
 								<SegmentedButtonItem key="Dark" text="Dark"/>
-								<!--<SegmentedButtonItem key="Auto" text="Auto"/>-->
 							</items>
 						</SegmentedButton>
 						<Avatar src="./webapp/localService/photo/profile.jpg" displaySize="XS" press=".onAvatarPressed"/>
@@ -28,9 +27,6 @@
 								<uxap:expandedHeading>
 									<FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
 										<Title text="{appModel>/profileData/nickName}" wrapping="true" class="sapUiTinyMarginEnd sapUiTinyMarginTop"/>
-										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
-											<ObjectMarker type="Favorite" class="sapUiTinyMarginEnd"/>
-										</FlexBox>
 									</FlexBox>
 								</uxap:expandedHeading>
 								<uxap:snappedHeading>
@@ -38,9 +34,6 @@
 										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
 											<f:Avatar src="./webapp/localService/photo/profile.jpg" displaySize="S" class="sapUiTinyMarginEnd"/>
 											<Title text="{appModel>/profileData/nickName}" wrapping="true" class="sapUiTinyMarginEnd"/>
-										</FlexBox>
-										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
-											<ObjectMarker type="Favorite" class="sapUiTinyMarginEnd"/>
 										</FlexBox>
 									</FlexBox>
 								</uxap:snappedHeading>
