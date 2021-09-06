@@ -12,14 +12,11 @@ sap.ui.define([
 
 		onInit: function () {
 			this.byId("idThemeSegment").setSelectedKey("Light");
-			if (new Date().getHours() > 18) {
+			if (new Date().getHours() > 18 || new Date().getHours() < 7) {
 				this.byId("idThemeSegment").setSelectedKey("Dark");
 				sap.ui.getCore().applyTheme("sap_fiori_3_dark");
-			} else if (new Date().getHours() > 6) {
-				sap.ui.getCore().applyTheme("sap_fiori_3");
 			} else {
-				this.byId("idThemeSegment").setSelectedKey("Dark");
-				sap.ui.getCore().applyTheme("sap_fiori_3_dark");
+				sap.ui.getCore().applyTheme("sap_fiori_3");
 			}
 		},
 
