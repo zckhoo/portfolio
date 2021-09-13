@@ -11,7 +11,7 @@
 				displayShape="Square">
 				<detailBox>
 					<LightBox>
-						<LightBoxItem imageSrc="./webapp/localService/photo/contactQR.png" alt="{i18n>xlbl.phonebook}" title="{i18n>xlbl.phonebook}"
+						<LightBoxItem imageSrc="./webapp/localService/photo/contactQR.png" alt="{i18n>xlbl.addContact}" title="{i18n>xlbl.addContact}"
 							subtitle="{i18n>xtit.scanQRcode}"/>
 					</LightBox>
 				</detailBox>

@@ -47,11 +47,6 @@ sap.ui.define([
 		onPressEmail: function (oEvent) {
 			var sEmail = this.getModel("appModel").getProperty("/profileData/email");
 			URLHelper.triggerEmail(sEmail, "Project Enquiry");
-		},
-
-		onPressCertificate: function (oEvent) {
-			var sEmail = this.getModel("appModel").getProperty("/profileData/email");
-			URLHelper.triggerEmail(sEmail, "Send me a copy of latest resume");
 		}
 	});
 });
