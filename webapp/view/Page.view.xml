@@ -1,11 +1,12 @@
 <mvc:View controllerName="my.zckhoo.portfolio.controller.Page" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:uxap="sap.uxap"
-	xmlns="sap.m" xmlns:f="sap.f" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
 	<App id="app">
 		<pages>
 			<Page class="myProfile" backgroundDesign="Transparent">
 				<headerContent width="100%">
 					<tnt:ToolHeader width="100%">
 						<Image width="2rem" src="./webapp/localService/photo/logo.png"/>
+						<!-- <Image width="2rem" src="../localService/photo/logo.png"/> -->
 						<Text text="{appModel>/profileData/nickName}" wrapping="false"/>
 						<ToolbarSpacer/>
 						<Title text="{i18n>xtit.resume}"/>
@@ -17,6 +18,7 @@
 							</items>
 						</SegmentedButton>
 						<Avatar src="./webapp/localService/photo/profile.jpg" displaySize="XS" press=".onAvatarPressed"/>
+						<!-- <Avatar src="../localService/photo/profile.jpg" displaySize="XS" press=".onAvatarPressed"/> -->
 					</tnt:ToolHeader>
 				</headerContent>
 				<content>
@@ -32,7 +34,8 @@
 								<uxap:snappedHeading>
 									<FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
 										<FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
-											<f:Avatar src="./webapp/localService/photo/profile.jpg" displaySize="S" class="sapUiTinyMarginEnd"/>
+											<Avatar src="./webapp/localService/photo/profile.jpg" displaySize="S" class="sapUiTinyMarginEnd"/>
+											<!-- <Avatar src="../localService/photo/profile.jpg" displaySize="S" class="sapUiTinyMarginEnd"/> -->
 											<Title text="{appModel>/profileData/nickName}" wrapping="true" class="sapUiTinyMarginEnd"/>
 										</FlexBox>
 									</FlexBox>
@@ -51,7 +54,8 @@
 						</uxap:headerTitle>
 						<uxap:headerContent >
 							<FlexBox class="myProfile" wrap="Wrap" fitContainer="true" alignItems="Stretch">
-								<f:Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="./webapp/localService/photo/profile.jpg" displaySize="L"></f:Avatar>
+								<Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="./webapp/localService/photo/profile.jpg" displaySize="L"/>
+								<!-- <Avatar class="sapUiSmallMarginEnd sapUiSmallMarginTop" src="../localService/photo/profile.jpg" displaySize="L"/> -->
 								<l:VerticalLayout class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop">
 									<ObjectStatus title="{i18n>xlbl.name}" text="{appModel>/profileData/nickName}"/>
 									<ObjectStatus title="{i18n>xlbl.currentLocation}" text="{appModel>/profileData/location}"/>

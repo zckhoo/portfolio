@@ -9,15 +9,20 @@
 			<Button width="10rem" icon="sap-icon://call" text="{appModel>/profileData/phone}" press="onPressPhone"/>
 			<Avatar src="./webapp/localService/photo/contactQR.png" displaySize="Custom" customDisplaySize="10rem" backgroundColor="Placeholder"
 				displayShape="Square">
+			<!-- <Avatar src="../localService/photo/contactQR.png" displaySize="Custom" customDisplaySize="10rem" backgroundColor="Placeholder"
+				displayShape="Square"> -->
 				<detailBox>
 					<LightBox>
 						<LightBoxItem imageSrc="./webapp/localService/photo/contactQR.png" alt="{i18n>xlbl.addContact}" title="{i18n>xlbl.addContact}"
 							subtitle="{i18n>xtit.scanQRcode}"/>
+						<!-- <LightBoxItem imageSrc="../localService/photo/contactQR.png" alt="{i18n>xlbl.addContact}" title="{i18n>xlbl.addContact}"
+							subtitle="{i18n>xtit.scanQRcode}"/> -->
 					</LightBox>
 				</detailBox>
 			</Avatar>
 		</l:VerticalLayout>
 		<Label text="{i18n>xlbl.whatsapp}"/>
 		<Button width="10rem" icon="./webapp/localService/photo/whatsapp.png" text="{appModel>/profileData/phone}" press="onPressWhatsApp"/>
+		<!-- <Button width="10rem" icon="../localService/photo/whatsapp.png" text="{appModel>/profileData/phone}" press="onPressWhatsApp"/> -->
 	</form:SimpleForm>
 </core:FragmentDefinition>
