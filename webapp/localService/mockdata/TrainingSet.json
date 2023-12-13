@@ -90,4 +90,16 @@
 		"type": "ZPROFILE_SRV.Training"
 	},
 	"isCertify": true
+}, {
+	"key": "03b59e13-e0a0-4a30-90f1-f534780ff7f8",
+	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+	"courseName": "UX402 - Advanced SAPUI5 Development",
+	"courseDate": "/Date(1648569600000)/",
+	"trainer": "Junzo (HRDF)",
+	"status": "Attendance Certificate",
+	"__metadata": {
+		"uri": "TrainingSet(guid'03b59e13-e0a0-4a30-90f1-f534780ff7f8')",
+		"type": "ZPROFILE_SRV.Training"
+	}
 }]
