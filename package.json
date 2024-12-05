@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
+    "@sap-ux/ui5-middleware-fe-mockserver": "^2.2.82",
     "@sap/ui5-builder-webide-extension": "1.0.x",
     "@sap/ux-ui5-tooling": "^1.10.6",
     "@ui5/cli": "^3.0.0",
@@ -17,7 +18,7 @@
     "build": "ui5 build -a --clean-dest --include-task=generateCachebusterInfo",
     "deploy": "fiori verify",
     "deploy-config": "fiori add deploy-config",
-    "start-mock": "fiori run --open \"test/flpSandboxMockServer.html?sap-ui-xx-viewCache=false#app-tile\"",
+    "start-mock": "fiori run --config ./ui5-mock.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#app-tile\"",
     "suite-tests": "fiori run --open 'test/testsuite.qunit.html'",
     "unit-tests": "fiori run --open 'test/unit/unitTests.qunit.html'",
     "int-tests": "fiori run --open 'test/integration/opaTests.qunit.html'"

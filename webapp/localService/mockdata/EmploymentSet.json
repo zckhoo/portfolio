@@ -1,39 +1,58 @@
-[{
-	"key": "3066e7fb-faa3-45ce-a12a-0a94a736ebb4",
-	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
-	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
-	"companyName": "NTT DATA Business Solutions Malaysia Sdn Bhd.",
-	"industry": "SAP Business Partner",
-	"position": "SAP Consultant",
-	"joinDate": "/Date(1295193600000)/",
-	"leftDate": "/Date(1527177600000)/",
-	"__metadata": {
-		"uri": "EmploymentSet(guid'3066e7fb-faa3-45ce-a12a-0a94a736ebb4')",
-		"type": "ZPROFILE_SRV.Employment"
-	},
-	"jobSpecification": "ABAP Developer, SAPUI5 Developer"
-}, {
-	"key": "66675862-5168-432a-8e81-0a52b35086ea",
-	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
-	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
-	"companyName": "I-Xeon MSC Sdn. Bhd.",
-	"industry": "Software Solution House",
-	"position": "System Developer",
-	"joinDate": "/Date(1244476800000)/",
-	"leftDate": "/Date(1295020800000)/",
-	"__metadata": {
-		"uri": "EmploymentSet(guid'66675862-5168-432a-8e81-0a52b35086ea')",
-		"type": "ZPROFILE_SRV.Employment"
-	},
-	"jobSpecification": "System Developer, PeopleSoft"
-}, {
-	"key": "01ece366-813e-4007-97ea-22ce3cb18494",
-	"rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
-	"parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
-	"companyName": "Weyer Computer Services Sdn. Bhd.",
-	"industry": "Computer Service Centre",
-	"position": "Trainee – Technical Support",
-	"joinDate": "/Date(1209657600000)/",
-	"leftDate": "/Date(1217433600000)/",
-	"jobSpecification": "Technical Support"
-}]
+[
+    {
+        "key": "00a4c48c-6189-40f8-b185-4384998a9b61",
+        "rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "companyName": "Continental Tyre PJ Malaysia Sdn Bhd.",
+        "industry": "Manufacturing",
+        "position": "UI & UX Development Team Lead",
+        "joinDate": "/Date(1525968000000)/",
+        "leftDate": null,
+        "__metadata": {
+            "uri": "EmploymentSet(guid'00a4c48c-6189-40f8-b185-4384998a9b61')",
+            "type": "ZPROFILE_SRV.Employment"
+        },
+        "jobSpecification": "Fullstack Developer, Team Lead"
+    },
+    {
+        "key": "3066e7fb-faa3-45ce-a12a-0a94a736ebb4",
+        "rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "companyName": "NTT DATA Business Solutions Malaysia Sdn Bhd.",
+        "industry": "SAP Business Partner",
+        "position": "SAP Consultant",
+        "joinDate": "/Date(1295193600000)/",
+        "leftDate": "/Date(1527177600000)/",
+        "__metadata": {
+            "uri": "EmploymentSet(guid'3066e7fb-faa3-45ce-a12a-0a94a736ebb4')",
+            "type": "ZPROFILE_SRV.Employment"
+        },
+        "jobSpecification": "ABAP Developer, SAPUI5 Developer"
+    },
+    {
+        "key": "66675862-5168-432a-8e81-0a52b35086ea",
+        "rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "companyName": "I-Xeon MSC Sdn. Bhd.",
+        "industry": "Software Solution House",
+        "position": "System Developer",
+        "joinDate": "/Date(1244476800000)/",
+        "leftDate": "/Date(1295020800000)/",
+        "__metadata": {
+            "uri": "EmploymentSet(guid'66675862-5168-432a-8e81-0a52b35086ea')",
+            "type": "ZPROFILE_SRV.Employment"
+        },
+        "jobSpecification": "System Developer, PeopleSoft"
+    },
+    {
+        "key": "01ece366-813e-4007-97ea-22ce3cb18494",
+        "rootKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "parentKey": "00a4c48c-0dfc-4507-abc6-9b54a431b788",
+        "companyName": "Weyer Computer Services Sdn. Bhd.",
+        "industry": "Computer Service Centre",
+        "position": "Trainee - Technical Support",
+        "joinDate": "/Date(1209657600000)/",
+        "leftDate": "/Date(1217433600000)/",
+        "jobSpecification": "Technical Support"
+    }
+]
